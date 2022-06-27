@@ -55,11 +55,15 @@
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_student_daily_activity.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_student_documents.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/institution_director_reports_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/institution_director_students_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/institutions.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/nav_list_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/spinner_item.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/students.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/update_coordinator_and_dep_director_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/update_coordinator_and_dep_director_profile_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/update_institution_director_profile_dialog.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
