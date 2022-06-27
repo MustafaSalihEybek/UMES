@@ -73,7 +73,10 @@ class SignInViewModel(application: Application) : BaseViewModel(application) {
                                 t.get("insDirectorId").toString().toInt(),
                                 t.get("insDirectorFullName").toString(),
                                 t.get("insDirectorDepartmenId").toString().toInt(),
-                                t.get("insDirectorDepartmenName").toString()
+                                t.get("insDirectorDepartmenName").toString(),
+                                t.get("insDirectorPassword").toString(),
+                                t.get("insDirectorPhone").toString(),
+                                t.get("insDirectorEmail").toString()
                             )
 
                             insDirectorData.value = AppUtils.mInsDirector
