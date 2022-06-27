@@ -54,10 +54,7 @@ class MainFragment : Fragment(), View.OnClickListener {
     private lateinit var coordinatorFragments: Array<Fragment>
     private lateinit var coordinatorItemList: Array<TextView>
 
-    private var institutionDirectorFragments = arrayOf(
-        InstitutionDirectorStudentsFragment(),
-        InstitutionDirectorDocumentsFragment()
-    )
+    private lateinit var institutionDirectorFragments: Array<Fragment>
     private lateinit var institutionDirectorItemList: Array<TextView>
 
     private lateinit var departmentFragments: Array<Fragment>
@@ -109,6 +106,11 @@ class MainFragment : Fragment(), View.OnClickListener {
                 insDirectorData = MainFragmentArgs.fromBundle(it).insDirectorData!!
                 main_fragment_navInsDirectorItemList.visibility = View.VISIBLE
                 main_fragment_txtUserName.text = insDirectorData.insDirectorFullName
+
+                institutionDirectorFragments = arrayOf(
+                    InstitutionDirectorStudentsFragment(insDirectorData.insDirectorId),
+                    InstitutionDirectorDocumentsFragment(insDirectorData.insDirectorId)
+                )
             } else if (loginType == "5"){
                 facultyDirectorData = MainFragmentArgs.fromBundle(it).facultyDirectorData!!
                 main_fragment_navFacultyDirectorItemList.visibility = View.VISIBLE
@@ -275,6 +277,8 @@ class MainFragment : Fragment(), View.OnClickListener {
     private fun showUpdateProfileDialog(loginType: String){
         if (loginType == "2" || loginType == "4")
             Singleton.showUpdateCoordinatorAndDepDirectorProfileDialog(v.context, coordinatorData, mainViewModel)
+        else if (loginType == "3")
+            Singleton.showUpdateInstitutionDirectorProfileDialog(v.context, insDirectorData)
     }
 
     private fun setFragment(fragment: Fragment?, itemList: Array<TextView>, selectedIndex: Int){
