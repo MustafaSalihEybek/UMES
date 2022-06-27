@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="insdirector"
+            type="com.codecanyon.umes.model.InsDirector" />
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:background="@color/dialogBgColor"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@color/dialogTopBgColor"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_black"
+            android:text="Profil Düzenle"
+            android:textColor="@color/dialogTopTxtColor"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/update_institution_director_profile_dialog_imgClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/img_close" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:focusableInTouchMode="false"
+        android:hint="Fullname"
+        android:text="@{insdirector.insDirectorFullName}"
+        android:textSize="17sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/update_coordinator_and_dep_director_profile_dialog_editUserFullName"
+        android:textColorHint="@color/dialogTxtColor"
+        android:textColor="@color/dialogTxtColor"
+        android:inputType="textPersonName"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/dialog_edit_bg"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:hint="Phone"
+        android:textSize="17sp"
+        android:paddingStart="10dp"
+        android:text="@{insdirector.insDirectorPhone}"
+        android:paddingEnd="10dp"
+        android:id="@+id/update_coordinator_and_dep_director_profile_dialog_editUserPhone"
+        android:textColorHint="@color/dialogTxtColor"
+        android:textColor="@color/dialogTxtColor"
+        android:inputType="phone"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/dialog_edit_bg"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:hint="Email"
+        android:text="@{insdirector.insDirectorEmail}"
+        android:textSize="17sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/update_coordinator_and_dep_director_profile_dialog_editUserEmail"
+        android:textColorHint="@color/dialogTxtColor"
+        android:textColor="@color/dialogTxtColor"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/dialog_edit_bg"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:hint="Old Password"
+        android:textSize="17sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/update_coordinator_and_dep_director_profile_dialog_editUserOldPassword"
+        android:textColorHint="@color/dialogTxtColor"
+        android:textColor="@color/dialogTxtColor"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/dialog_edit_bg"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="25dp"
+        android:hint="New Password"
+        android:textSize="17sp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:id="@+id/update_coordinator_and_dep_director_profile_dialog_editUserNewPassword"
+        android:textColorHint="@color/dialogTxtColor"
+        android:textColor="@color/dialogTxtColor"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/dialog_edit_bg"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Kapat"
+            android:textSize="18sp"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/update_coordinator_and_dep_director_profile_dialog_btnClose"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/btn_red_bg"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Güncelle"
+            android:id="@+id/update_coordinator_and_dep_director_profile_dialog_btnUpdate"
+            android:textSize="18sp"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/btn_orange_bg"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</layout>
