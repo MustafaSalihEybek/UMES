@@ -6,6 +6,7 @@ import com.codecanyon.umes.model.coordinator.RatingCoordinator
 import com.codecanyon.umes.model.coordinator.StudentCoordinator
 import com.codecanyon.umes.model.coordinator.StudentPaperCoordinator
 import com.codecanyon.umes.model.deparmentdirector.*
+import com.codecanyon.umes.model.institutiondirector.ReportsInstitutionDirector
 import com.codecanyon.umes.model.institutiondirector.StudentsInstitutionDirector
 import io.reactivex.Single
 import okhttp3.RequestBody
@@ -49,5 +50,9 @@ interface UmesAPI {
     @POST("departmentdirector/institutiondirectors.php")
     fun getInstitutionDirectorsForDepartmentDirector(@Body bodyData: RequestBody) : Single<List<InstitutionDirectorDepartmentDirector>>
 
-    fun getStudentsForInsDirector(@Body bodyData: RequestBody) : Single<List<StudentsInstitutionDirector>>
+    @POST("insdirector/students.php")
+    fun getStudentsForInstitutionDirector(@Body bodyData: RequestBody) : Single<List<StudentsInstitutionDirector>>
+
+    @POST("insdirector/reports.php")
+    fun getReportsForInstitutionDirector(@Body bodyData: RequestBody) : Single<List<ReportsInstitutionDirector>>
 }
