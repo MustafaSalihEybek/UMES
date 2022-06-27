@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <data>
+        <variable
+            name="institution"
+            type="com.codecanyon.umes.model.coordinator.InstitutionCoordinator" />
+    </data>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/itemBgColor"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.1"
+        android:textAlignment="center"
+        android:text="@{institution.institutionsName}"
+        android:textColor="@color/itemTxtColor"
+        android:textSize="14sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.4"
+        android:textAlignment="center"
+        android:text="@{institution.institutionsAddress}"
+        android:textColor="@color/itemTxtColor"
+        android:textSize="14sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:textAlignment="center"
+        android:layout_weight="0.8"
+        android:text="@{institution.institutionsPhone}"
+        android:textColor="@color/itemTxtColor"
+        android:textSize="14sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/coordinator_institutions_item_btnDetails"
+        android:layout_weight="0.7"
+        android:src="@drawable/detail_btn"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</layout>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fragment_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_fragment_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/actionBarColor">
+
+            <ImageView
+                android:id="@+id/main_fragment_imgNavMenu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/navigation_menu" />
+
+            <TextView
+                android:id="@+id/main_fragment_txtNavTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Anasayfa"
+                android:textColor="@color/actionBarTxtColor"
+                android:textSize="21sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <FrameLayout
+            android:id="@+id/main_fragment_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_fragment_toolBar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_fragment_navView"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:background="@color/navBgColor"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/main_fragment_navRela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/navHeaderColor">
+
+            <ImageView
+                android:id="@+id/main_fragment_imgLogo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ksu_logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_fragment_imgLogo"
+                android:layout_marginTop="10dp"
+                android:id="@+id/main_fragment_linearUserProfile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/main_fragment_imgUserProfile"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main_fragment_txtUserName"
+                    android:text="Mustafa Salih Eybek"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/main_fragment_navStudentItemList"
+            android:layout_below="@+id/main_fragment_navRela"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtStudentDailyActivity"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Günlük Aktivite"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtStudentDocuments"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Raporlar"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/main_fragment_navCoordinatorItemList"
+            android:layout_below="@+id/main_fragment_navRela"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtCoordinatorStudents"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrenciler"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtCoordinatorInstitutions"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Firmalar"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtCoordinatorRating"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Değerlendirme"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtCoordinatorStudentPapers"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrenci Belgeleri"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/main_fragment_navDepartmentDirectorItemList"
+            android:layout_below="@+id/main_fragment_navRela"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtDepartmentDirectorStudents"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrenciler"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtDepartmentDirectorMembers"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrt. Üyeleri"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtDepartmentDirectorMemberActivation"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrt. Üye Aktivasyon"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtDepartmentDirectorDocuments"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Dökümanlar"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtDepartmentDirectorInstitutions"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Kurumlar"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtDepartmentDirectorInstitutionDirectors"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Kurum Yetkilileri"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtDepartmentDirectorNotice"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Duyuru"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/main_fragment_navInsDirectorItemList"
+            android:layout_below="@+id/main_fragment_navRela"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtInsDirectorStudents"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrenciler"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtInsDirectorDocuments"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Raporlar"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/main_fragment_navFacultyDirectorItemList"
+            android:layout_below="@+id/main_fragment_navRela"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtFacultyDirectorStudents"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrenciler"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtFacultyDirectorMembers"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Öğrt. Üyeleri"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtFacultyDirectorDepartments"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Bölümler"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtFacultyDirectorDepartmentActivation"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Bölüm Aktivasyonu"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtFacultyDirectorInstitutions"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Kurumlar"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:id="@+id/main_fragment_txtFacultyDirectorDocuments"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="- Dökümanlar"
+                android:textColor="@color/navItemTxtColor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

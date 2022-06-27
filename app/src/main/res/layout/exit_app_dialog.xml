@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="340dp"
+    android:background="@color/dialogBgColor"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@color/dialogTopBgColor"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_black"
+            android:text="Çıkış"
+            android:textColor="@color/dialogTopTxtColor"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/exit_app_dialog_imgClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/img_close" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:text="Uygulamadan çıkmak istediğinize emin misiniz?"
+        android:textSize="16sp"
+        android:textColor="@color/dialogTxtColor"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/exit_app_dialog_imgYes"
+            android:src="@drawable/btn_exit_yes"
+            android:layout_height="40dp"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/exit_app_dialog_imgNo"
+            android:src="@drawable/btn_exit_no"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

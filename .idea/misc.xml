@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/drawable/btn_blue_bg.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/drawable/btn_red_bg.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/drawable/dialog_edit_bg.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/drawable/sign_in_btn_bg.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/drawable/sign_in_top_bg.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/coordinator_institutions_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/coordinator_instutions_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/coordinator_rating_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/coordinator_student_details_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/coordinator_student_papers_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/coordinator_students_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/coordinators.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/department_director_institution_directors_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/department_director_institutions_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/department_director_members_activation_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/department_director_members_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/department_director_student_papers_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/department_director_students_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/department_officer_students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/exit_app_dialog.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_coordinator_documents.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_coordinator_institutions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_coordinator_rating.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_coordinator_reports.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_coordinator_student_papers.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_coordinator_students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_director_documents.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_director_institution_directors.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_director_institutions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_director_member_activation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_director_members.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_director_notice.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_director_students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_officer_coordinators.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_officer_institutions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_officer_institutions_officer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_officer_students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_department_students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_faculty_director_department_activation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_faculty_director_departments.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_faculty_director_documents.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_faculty_director_institutions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_faculty_director_members.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_faculty_director_students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_institution_director_documents.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_institution_director_students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_sign.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_sign_in.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_student_daily_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/fragment_student_documents.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/institutions.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/nav_list_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/spinner_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/students.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Nexis/AndroidStudioProjects/UMES/app/src/main/res/layout/update_coordinator_and_dep_director_profile.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
