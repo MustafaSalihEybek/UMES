@@ -9,5 +9,7 @@ data class InsDirector(
     val insDirectorFullName: String = "",
     val insDirectorDepartmenId: Int = 1,
     val insDirectorDepartmenName: String = "",
-    val insDirectorPassword: String = ""
+    val insDirectorPassword: String = "",
+    val insDirectorPhone: String = "",
+    val insDirectorEmail: String = ""
 ) : Parcelable
