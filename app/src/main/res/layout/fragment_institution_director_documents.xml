@@ -5,13 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".view.institutiondirector.InstitutionDirectorDocumentsFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Documents"
-        android:textSize="21sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"
-        android:textColor="@android:color/black"
-        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/institution_director_documents_fragment_recyclerView"
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>
