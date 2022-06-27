@@ -8,6 +8,8 @@ import com.codecanyon.umes.model.Student
 import com.codecanyon.umes.repository.LoginRepository
 import com.codecanyon.umes.repository.coordinator.*
 import com.codecanyon.umes.repository.departmentdirector.*
+import com.codecanyon.umes.repository.institutiondirector.ReportsInstitutionDirectorRepository
+import com.codecanyon.umes.repository.institutiondirector.StudentsInstitutionDirectorRepository
 import io.reactivex.disposables.CompositeDisposable
 import okhttp3.RequestBody
 import org.json.JSONObject
@@ -35,6 +37,9 @@ object AppUtils {
     lateinit var membersDepartmentDirectorRepository: MembersDepartmentDirectorRepository
     lateinit var studentPaperDepartmentDirectorRepository: StudentPaperDepartmentDirectorRepository
     lateinit var studentsDepartmentDirectorRepository: StudentsDepartmentDirectorRepository
+
+    lateinit var studentsInstitutionDirectorRepository: StudentsInstitutionDirectorRepository
+    lateinit var reportsInstitutionDirectorRepository: ReportsInstitutionDirectorRepository
 
     lateinit var disposable: CompositeDisposable
     lateinit var jsonObject: JSONObject
