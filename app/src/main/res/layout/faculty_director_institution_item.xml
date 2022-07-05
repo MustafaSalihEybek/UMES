@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="institution"
+            type="com.codecanyon.umes.model.facultydirector.InstitutionFacultyDirector" />
+    </data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/itemBgColor"
+    android:weightSum="3"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.3"
+        android:textAlignment="center"
+        android:text="@{institution.institutionsName}"
+        android:textColor="@color/itemTxtColor"
+        android:textSize="14sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1.15"
+        android:textAlignment="center"
+        android:text="@{institution.institutionsDepartmentName}"
+        android:textColor="@color/itemTxtColor"
+        android:textSize="14sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/coordinator_institutions_item_btnDetails"
+        android:layout_weight="0.55"
+        android:src="@drawable/detail_btn"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</layout>

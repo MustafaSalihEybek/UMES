@@ -7,21 +7,20 @@ import android.widget.RelativeLayout
 import com.codecanyon.umes.model.Coordinator
 import com.codecanyon.umes.model.InsDirector
 import com.codecanyon.umes.model.coordinator.StudentCoordinator
-import com.codecanyon.umes.view.dialog.CoordinatorStudentDetailsDialog
-import com.codecanyon.umes.view.dialog.ExitAppDialog
-import com.codecanyon.umes.view.dialog.UpdateCoordinatorAndDepDirectorProfileDialog
-import com.codecanyon.umes.view.dialog.UpdateInstitutionDirectorProfileDialog
+import com.codecanyon.umes.model.facultydirector.StudentsFacultyDirector
+import com.codecanyon.umes.view.dialog.*
 import com.codecanyon.umes.viewmodel.MainViewModel
 
 class Singleton {
     companion object{
-        val SITE_URL: String = "192.168.27.3"
+        val SITE_URL: String = "192.168.1.147"
         val BASE_URL: String = "http://${SITE_URL}/UMES/api/"
 
         val VERTICAL_ITEM_SIZE: Int = 15
 
         lateinit var coordinatorStudentDetailsDialog: CoordinatorStudentDetailsDialog
         lateinit var exitAppDialog: ExitAppDialog
+        lateinit var facultyDirectorStudentDetailsDialog: FacultyDirectorStudentDetailsDialog
         var updateCoordinatorAndDepDirectorProfileDialog: UpdateCoordinatorAndDepDirectorProfileDialog? = null
         var updateInstitutionDirectorProfileDialog: UpdateInstitutionDirectorProfileDialog? = null
 
@@ -78,6 +77,12 @@ class Singleton {
                 if (it.isShowing)
                     it.dismiss()
             }
+        }
+
+        fun showFacultyDirectorStudentDetailsDialog(studentData: StudentsFacultyDirector, mContext: Context){
+            facultyDirectorStudentDetailsDialog = FacultyDirectorStudentDetailsDialog(studentData, mContext)
+            facultyDirectorStudentDetailsDialog.setCancelable(false)
+            facultyDirectorStudentDetailsDialog.show()
         }
     }
 }

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="student"
+            type="com.codecanyon.umes.model.facultydirector.StudentsFacultyDirector" />
+    </data>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:background="@color/dialogBgColor"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@color/dialogTopBgColor"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Öğrenci Detay"
+            android:textSize="21sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/dialogTopTxtColor"
+            android:fontFamily="@font/poppins_black"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/faculty_director_student_details_dialog_imgClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/img_close" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Öğrenci Email"
+                android:textSize="15sp"
+                android:textColor="@color/dialogTxtColor"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Email adresi"
+                android:setTextData="@{student.studentEmail}"
+                android:textSize="14sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/dialogEditTxtColor"
+                android:textColor="@color/dialogEditTxtColor"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/edit_bg"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Öğrenci Telefon"
+                android:textSize="15sp"
+                android:textColor="@color/dialogTxtColor"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Telefon"
+                android:textSize="14sp"
+                android:setTextData="@{student.studentPhone}"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:inputType="phone"
+                android:textColorHint="@color/dialogEditTxtColor"
+                android:textColor="@color/dialogEditTxtColor"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/edit_bg"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="200dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Öğrenci Adres"
+            android:textSize="15sp"
+            android:textColor="@color/dialogTxtColor"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Adres"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:setTextData="@{student.studentAddress}"
+            android:gravity="start|top"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/dialogEditTxtColor"
+            android:textColor="@color/dialogEditTxtColor"
+            android:fontFamily="@font/poppins_regular"
+            android:background="@drawable/edit_bg"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Kurumu"
+                android:textSize="15sp"
+                android:textColor="@color/dialogTxtColor"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Kurum"
+                android:textSize="14sp"
+                android:paddingStart="5dp"
+                android:setTextData="@{student.studentInstitutionName}"
+                android:paddingEnd="5dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/dialogEditTxtColor"
+                android:textColor="@color/dialogEditTxtColor"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/edit_bg"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Kurum Yetkilisi"
+                android:textSize="15sp"
+                android:textColor="@color/dialogTxtColor"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Yetkili"
+                android:textSize="14sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:setTextData="@{student.studentInstitutionDirectorName}"
+                android:inputType="phone"
+                android:textColorHint="@color/dialogEditTxtColor"
+                android:textColor="@color/dialogEditTxtColor"
+                android:fontFamily="@font/poppins_regular"
+                android:background="@drawable/edit_bg"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/faculty_director_student_details_dialog_btnClose"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/close_btn"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
+
+</layout>

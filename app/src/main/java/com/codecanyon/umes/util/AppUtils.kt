@@ -8,6 +8,7 @@ import com.codecanyon.umes.model.Student
 import com.codecanyon.umes.repository.LoginRepository
 import com.codecanyon.umes.repository.coordinator.*
 import com.codecanyon.umes.repository.departmentdirector.*
+import com.codecanyon.umes.repository.facultydirector.*
 import com.codecanyon.umes.repository.institutiondirector.ReportsInstitutionDirectorRepository
 import com.codecanyon.umes.repository.institutiondirector.StudentsInstitutionDirectorRepository
 import io.reactivex.disposables.CompositeDisposable
@@ -40,6 +41,12 @@ object AppUtils {
 
     lateinit var studentsInstitutionDirectorRepository: StudentsInstitutionDirectorRepository
     lateinit var reportsInstitutionDirectorRepository: ReportsInstitutionDirectorRepository
+
+    lateinit var studentsFacultyDirectorRepository: StudentsFacultyDirectorRepository
+    lateinit var membersFacultyDirectorRepository: MembersFacultyDirectorRepository
+    lateinit var sectionsFacultyDirectorRepository: SectionsFacultyDirectorRepository
+    lateinit var sectionActivationsFacultyDirectorRepository: SectionActivationsFacultyDirectorRepository
+    lateinit var institutionsFacultyDirectorRepository: InstitutionsFacultyDirectorRepository
 
     lateinit var disposable: CompositeDisposable
     lateinit var jsonObject: JSONObject

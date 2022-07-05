@@ -60,14 +60,7 @@ class MainFragment : Fragment(), View.OnClickListener {
     private lateinit var departmentFragments: Array<Fragment>
     private lateinit var departmentItemList: Array<TextView>
 
-    private var facultyDirectorFragments = arrayOf(
-        FacultyDirectorStudentsFragment(),
-        FacultyDirectorMembersFragment(),
-        FacultyDirectorDepartmentsFragment(),
-        FacultyDirectorDepartmentActivationFragment(),
-        FacultyDirectorInstitutionsFragment(),
-        FacultyDirectorDocumentsFragment()
-    )
+    private lateinit var facultyDirectorFragments: Array<Fragment>
     private lateinit var facultyDirectorItemList: Array<TextView>
 
     private fun init(){
@@ -115,6 +108,15 @@ class MainFragment : Fragment(), View.OnClickListener {
                 facultyDirectorData = MainFragmentArgs.fromBundle(it).facultyDirectorData!!
                 main_fragment_navFacultyDirectorItemList.visibility = View.VISIBLE
                 main_fragment_txtUserName.text = facultyDirectorData.facultyDirectorFullName
+
+                facultyDirectorFragments = arrayOf(
+                    FacultyDirectorStudentsFragment(facultyDirectorData.facultyDirectorId),
+                    FacultyDirectorMembersFragment(facultyDirectorData.facultyDirectorId),
+                    FacultyDirectorDepartmentsFragment(facultyDirectorData.facultyDirectorId),
+                    FacultyDirectorDepartmentActivationFragment(facultyDirectorData.facultyDirectorId),
+                    FacultyDirectorInstitutionsFragment(facultyDirectorData.facultyDirectorId),
+                    FacultyDirectorDocumentsFragment()
+                )
             }
 
             Singleton.mNavView = main_fragment_navView
